@@ -197,30 +197,33 @@ jQuery(window).on("load", function () {
         $("#error_reseration_date").fadeIn(500)
       } else $("#error_reseration_date").fadeOut(500);
 
-      $.ajax({
-        type: "POST",
-        url: "php/api.php",
-        data: {
-          name : e,
-          email : a,
-          message : s,
-          contact : c,
-          date : d,
-          action : 'reservationConfirm'
-        },
-        beforeSend:function(){
-          // Notiflix.Loading.Hourglass('Please wait...');
-          Notiflix.Block.Hourglass('body', 'Please wait');
-        },
-        success: function (response) {
-            var res = JSON.parse(response);
-            if(res.success){
-              Notiflix.Block.Remove('body');
-              $("#btn-reservation").removeAttr("disabled")
-              Notiflix.Report.Success("Success", 'Thank you. We received your reservation, our team will contact you ', false, function(){location.reload()});
-            }
-        }
-      })
+      if(r = !1){
+        $.ajax({
+          type: "POST",
+          url: "php/api.php",
+          data: {
+            name : e,
+            email : a,
+            message : s,
+            contact : c,
+            date : d,
+            action : 'reservationConfirm'
+          },
+          beforeSend:function(){
+            // Notiflix.Loading.Hourglass('Please wait...');
+            Notiflix.Block.Hourglass('body', 'Please wait');
+          },
+          success: function (response) {
+              var res = JSON.parse(response);
+              if(res.success){
+                Notiflix.Block.Remove('body');
+                $("#btn-reservation").removeAttr("disabled")
+                Notiflix.Report.Success("Success", 'Thank you. We received your reservation, our team will contact you ', false, function(){location.reload()});
+              }
+          }
+        })
+      }
+      
     });
   });
 
