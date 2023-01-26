@@ -196,10 +196,11 @@ jQuery(window).on("load", function () {
         var r = !0;
         $("#error_reseration_date").fadeIn(500)
       } else $("#error_reseration_date").fadeOut(500);
-
-      if(r = !1){
+      alert(r);
+      if(r == false){
+        alert("hi");
         $.ajax({
-          type: "POST",
+          type: "POST", 
           url: "php/api.php",
           data: {
             name : e,
