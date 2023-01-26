@@ -16,6 +16,12 @@ if(isset($_POST['action'])){
     }
 } 
 
+if(isset($_GET['action'])){
+    if($_GET['action'] == "reservationConfirm"){
+        reservationConfirm();
+    }
+} 
+
 function reservationConfirm(){
     global $config;
 
