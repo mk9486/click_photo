@@ -1,8 +1,8 @@
 <?php
-$config['db']['host'] = 'localhost:3307';
-$config['db']['name'] = 'click_admin';
+$config['db']['host'] = 'localhost:3306';
+$config['db']['name'] = 'zcodrilt_click_admin';
 $config['db']['user'] = 'root';
-$config['db']['pass'] = '';
-$config['db']['port'] = '';
+$config['db']['pass'] = 'zcodrilt_admin_zcod';
+$config['db']['port'] = '3306';
 
 ?>
