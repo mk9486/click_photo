@@ -58,7 +58,7 @@
                 <h3>
                 FACEBOOK FEED
                 </h3>
-                <div class="fb-page" data-href="https://www.facebook.com/clickbydhanesh/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/clickbydhanesh/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/clickbydhanesh/">Click</a></blockquote></div>
+                <!-- <div class="fb-page" data-href="https://www.facebook.com/clickbydhanesh/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/clickbydhanesh/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/clickbydhanesh/">Click</a></blockquote></div> -->
               </div>
               
             </div>
